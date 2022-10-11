@@ -7,7 +7,7 @@ import { FileManagerComponent, Inject, NavigationPane, DetailsView, Toolbar, Con
  * File Manager sample with NodeJs service
  */
 export class NodeJSServer extends SampleBase {
-    // hostUrl = "http://localhost:8000/";
+    // hostUrl = "https://localhost:8000/";
     hostUrl = "http://142.93.119.251:8090/";
     render() {
         return (<div>
