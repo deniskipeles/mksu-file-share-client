@@ -3,6 +3,11 @@ import './index.css';
 import * as React from 'react';
 import { SampleBase } from './sample-base';
 import { FileManagerComponent, Inject, NavigationPane, DetailsView, Toolbar, ContextMenu } from '@syncfusion/ej2-react-filemanager';
+
+// Registering Syncfusion license key
+import { registerLicense } from '@syncfusion/ej2-base';
+
+ej.base.registerLicense('ORg4AjUWIQA/Gnt2VVhjQlFaclhJXGJWf1NpR2NbfU5xdF9HaFZUQmYuP1ZhSXxRd0ViWH5ecn1QT2JdVUA=');
 /**
  * File Manager sample with NodeJs service
  */
