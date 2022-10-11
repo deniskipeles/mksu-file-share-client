@@ -6,8 +6,7 @@ import { FileManagerComponent, Inject, NavigationPane, DetailsView, Toolbar, Con
 
 // Registering Syncfusion license key
 import { registerLicense } from '@syncfusion/ej2-base';
-
-ej.base.registerLicense('ORg4AjUWIQA/Gnt2VVhjQlFaclhJXGJWf1NpR2NbfU5xdF9HaFZUQmYuP1ZhSXxRd0ViWH5ecn1QT2JdVUA=');
+registerLicense('ORg4AjUWIQA/Gnt2VVhjQlFaclhJXGJWf1NpR2NbfU5xdF9HaFZUQmYuP1ZhSXxRd0ViWH5ecn1QT2JdVUA=');
 /**
  * File Manager sample with NodeJs service
  */
