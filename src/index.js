@@ -12,7 +12,8 @@ registerLicense('ORg4AjUWIQA/Gnt2VVhjQlFaclhJXGJWf1NpR2NbfU5xdF9HaFZUQmYuP1ZhSXx
  */
 export class NodeJSServer extends SampleBase {
     // hostUrl = "https://localhost:8000/";
-    hostUrl = "https://142.93.119.251:8090/";
+    // hostUrl = "https://142.93.119.251:8090/";
+    hostUrl = "https://mksu-file-share.fly.dev/";
     render() {
         return (<div>
                 <div className="control-section">
