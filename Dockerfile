@@ -94,6 +94,7 @@ RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar \
 WORKDIR /usr/app
 COPY ./ /usr/app
 RUN npm install
+EXPOSE 3000
 
 # Set up a default command
 CMD [ "npm","start" ]
