@@ -91,12 +91,9 @@ RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar \
   # smoke test
   && yarn --version
 
-COPY docker-entrypoint.sh /usr/local/bin/
-COPY . /src
-# Install app dependencies
-RUN cd /src
+WORKDIR /usr/app
+COPY ./ /usr/app
 RUN npm install
-# ENTRYPOINT ["docker-entrypoint.sh"]
-EXPOSE 3000
 
-CMD [ "node", "start" ]
+# Set up a default command
+CMD [ "npm","start" ]
