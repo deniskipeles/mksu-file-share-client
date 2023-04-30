@@ -92,6 +92,11 @@ RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar \
   && yarn --version
 
 COPY docker-entrypoint.sh /usr/local/bin/
+COPY . /src
+# Install app dependencies
+RUN cd /src
+RUN npm install
 ENTRYPOINT ["docker-entrypoint.sh"]
+EXPOSE 3000
 
-CMD [ "node" ]
+CMD [ "node", "start" ]
