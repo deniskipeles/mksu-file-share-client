@@ -96,5 +96,5 @@ COPY ./ /usr/app
 RUN npm install
 EXPOSE 3000
 
-# Set up a default command
+# Set up a default command updates 
 CMD [ "npm","start" ]
